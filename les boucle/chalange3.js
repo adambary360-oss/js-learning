@@ -1,10 +1,10 @@
 const prompt = require('prompt-sync')();
 
 let number = parseInt(prompt("entre le number:"));
-let f = 1 ;
+let s = 0 ;
 
 for ( let i = 1 ; i <= number ; i++ ){
 
-    f *= i;
+    s += i
 }
-console.log(`${number}! = ${f}`)
+console.log(`${number} = ${s}`)

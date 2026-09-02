@@ -4,7 +4,7 @@ let Revenuannuel = parseInt(prompt("entre Revenu annuel :"))
 let Scoredecrédit = parseInt(prompt("Score de crédit :"))
 let Duréeduprêt = parseInt(prompt("entre Durée du prêt :"))
 
-if ( Revenuannuel >= 30000 && Scoredecrédit >= 1000 &&Duréeduprêt <= 30 ){
+if ( Revenuannuel >= 30000 && Scoredecrédit >= 1000 && Duréeduprêt <= 30 ){
     console.log(`Félicitations ! Vous êtes éligible pour le prêt`)
 }
 else{
