@@ -5,11 +5,13 @@ let taille = parseInt(prompt("Combien d'éléments voulez-vous dans le tableau ?
 
 
 
-let multiplication = 0 ;
+let monTableau = [];
 
-let valeur = []
+// 3. Boucle de saisie
 for (let i = 0; i < taille; i++) {
-    valeur[i] = (parseInt(prompt(`Entrez l'élément n :`)))*3;
-    multiplication *= valeur[i]  
+    let valeur = (prompt(`Entrez l'élément n°${i + 1} :`)*taille);
+    
+    // 4. Ajout de la valeur à la fin du tableau
+    monTableau.push(valeur);
 }
-console.log(multiplication)
+console.log(monTableau)

@@ -8,7 +8,7 @@ let somme = 0;
 
 let valeur = []
 for (let i = 0; i < taille; i++) {
-    valeur[i] = parseInt(prompt(`Entrez l'élément n :`));
+    valeur[i] = parseIntprompt(`Entrez l'élément n :`);
     somme += valeur[i]  
 }
 
