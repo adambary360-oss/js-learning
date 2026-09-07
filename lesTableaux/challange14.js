@@ -6,12 +6,15 @@ let resultat = []
 
 for (let i = 0; i < taille; i++) {
     let valeur = prompt(`Entrez l'élément n°${i + 1} :`);
-    resultat.push(valeur);
+    parseInt(resultat.push(valeur));
 }
-let impaireresultat =[]
+let somme = 0
+let moyen = 0
+
 for (i = 0 ; i < taille  ; i++){
-    if (resultat[i] % 2 !== 0){
-         impaireresultat += resultat[i]
-    }
+    somme += parseInt(resultat[i])
 }
-console.log(impaireresultat)
+
+console.log(somme)
+moyen = somme/taille
+console.log(moyen)
