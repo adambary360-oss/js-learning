@@ -1,9 +1,9 @@
 function triRapide(arry){
-    let midle =arry[0]
+    let midle = arry[0]
     let lift = []
     let reight = []
     
-    for(i = 0 ; i < arry.length ; i++){
+    for(let i = 0 ; i < arry.length ; i++){
 
         if(arry[i] < midle){
             lift.push(arry[i])

@@ -1,17 +1,23 @@
 
-
-let nombres = [1,4,5,7,3] 
-
-console.log("tableau avant le tri:"+ nombres.join(", "))
-
-for (i = 0 ; i <= nombres.length ; i++){
-    let resultat = []
-    for(let k = 0 ; k <= nombres.length-i-1;k++){
-        if(nombres[k] < nombres[k-1] ){
-            let temp = nombres[k]
-            nombres[k] =nombres[k - 1]
-            nombres[k -1] = temp
+function selection(array){
+    for (i = 0 ; i < array.length ; i++){
+        let min = i
+        for(j = i + 1 ; j < array.length ; j++){
+            if (array[j]<array[min]){
+                min = j ;
+            }
         }
+        let tmp = array[i]
+        array[i] = array[min]
+        array[min] = tmp
     }
+    return array
 }
- console.log(nombres)
+
+array1 = [1,3,4,5,8,7,6,5,4]
+
+selection(array1)
+
+console.log(selection(array1))
+
+
